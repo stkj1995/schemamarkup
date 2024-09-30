@@ -1,13 +1,11 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import { Image } from 'astro:assets';
-import farver from "../assets/images/01-farver.png";
-import motiver from "../assets/images/02-motiver.png";
-import strl from "../assets/images/03-strl.png";
-import layout1 from "../assets/images/04-layout1.png";
-import layout2 from "../assets/images/04-layout2.png";
-import layout3 from "../assets/images/04-layout3.png";
-import layout4 from "../assets/images/04-layout4.png";
+import mix from "../assets/images/matthew-moloney-NaR_XXD1CO4-unsplash.jpg";
+import back from "../assets/images/joel-muniz-QadWZdWSe_8-unsplash.jpg";
+import shy from "../assets/images/jon-tyson-wAIAtEJUMqw-unsplash.jpg";
+import blue from "../assets/images/pexels-jibarofoto-2257475.jpg";
+import red from "../assets/images/yuka-yamazaki-PfBZs461d4w-unsplash.jpg";
 ---
 <MainLayout title="Historien om rap - Fra gaden til global succes">
 	<article class="grid mx-auto container gap-8 pt-8 prose">
@@ -24,7 +22,7 @@ import layout4 from "../assets/images/04-layout4.png";
         <li>Beats: Beats i RAP er ofte bygget op af tunge trommespor, bas og samples fra andre musikgenrer, især funk, soul og jazz. Beats danner grundlaget for rappen og giver musikken dens groove og energi.</li>  
         </ul>
 
-        <Image src={farver} alt="" />
+        <Image src={mix} alt="billede af mixerpult" />
 
         <hr>
 
@@ -41,7 +39,7 @@ import layout4 from "../assets/images/04-layout4.png";
         <li>The Notorious B.I.G. (Biggie Smalls) var kendt for sit uovertrufne flow og storytelling, især i “Juicy”: "It was all a dream, I used to read Word Up! magazine." Han beskrev vejen fra intet til succes og satte nye standarder for lyrik.</li>
         </ul>
 
-        <Image src={motiver} alt="" />
+        <Image src={back} alt="billede af rappers ryg" />
 
         <hr>
 
@@ -69,7 +67,7 @@ import layout4 from "../assets/images/04-layout4.png";
             <li>Drill: Opstod i Chicago og har en rå, voldsom lyd med temaer om gadeliv og vold. Kunstnere som Chief Keef og Pop Smoke har bragt denne stil frem i rampelyset, især i UK og USA.</li>
         </ul>
 
-        <Image src={strl} alt="" />
+        <Image src={shy} alt="billede af graffitiplakat med teksten 'too shy to rap'" />
 
         <hr>
         <h2>Kulturel betydning af RAP</h2>
@@ -92,11 +90,9 @@ import layout4 from "../assets/images/04-layout4.png";
 
         <div class="grid grid-cols-2 gap-4">
 
-			<Image src={layout1} alt="" />
-            <Image src={layout2} alt="" />
-            <Image src={layout3} alt="" />
-            <Image src={layout4} alt="" />
-
+			<Image src={blue} alt="klubfest i blåt lys" />
+            <Image src={red} alt="klubfest i rødt lys" />
+      
         </div>
         <hr>
 
