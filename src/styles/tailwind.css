@@ -1,3 +1,10 @@
+@import "animate.css";
+
 @tailwind base;
 @tailwind components;
+
 @tailwind utilities;
+
+.animate-fade-in {
+  @apply animate__animated animate__fadeIn;
+}
