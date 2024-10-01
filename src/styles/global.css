@@ -1,7 +1,7 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #3c3f55; /* Mørk grå/lilla baggrund */
-    color: #f9fafb; /* Lys grå tekst for bedre kontrast */
+    background-color: #2a2d3e; /* Mørkere grå/lilla baggrund */
+    color: #e0e0e0; /* Lys grå tekst for bedre kontrast */
 }
 
 h1, h2, h3 {
@@ -10,21 +10,22 @@ h1, h2, h3 {
 }
 
 section {
-    background-color: rgba(243, 244, 246, 0.9); /* Lys grå sektion med lidt gennemsigtighed */
+    background-color: rgba(255, 255, 255, 0.1); /* Let transparent hvid sektion for et mere urbant look */
     padding: 1.5rem;
     border-radius: 0.5rem;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-bottom: 2rem;
 }
 
 ul {
     list-style-type: disc;
     padding-left: 1.5rem;
+    color: #e0e0e0; /* Lys grå tekst for lister */
 }
 
 hr {
     margin: 2rem 0;
-    border: 1px solid #e5e7eb; /* Lys grå linje */
+    border: 1px solid #7d7d7d; /* Mørk grå linje */
 }
 
 img {
