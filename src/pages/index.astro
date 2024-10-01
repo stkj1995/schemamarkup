@@ -8,6 +8,8 @@ import blue from "../assets/images/pexels-jibarofoto-2257475.jpg";
 import red from "../assets/images/yuka-yamazaki-PfBZs461d4w-unsplash.jpg";
 import herounitImage from '../assets/images/herounit1.png';
 import '../styles/global.css'; // Importer global.css
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <script type="application/ld+json">
@@ -31,8 +33,11 @@ import '../styles/global.css'; // Importer global.css
     }}
     </script>
 
+
 <MainLayout title="Historien om rap - Fra gaden til global succes">
     
+    <Header></Header>
+
     <!-- Hero Unit -->
     <section class="relative bg-cover bg-center h-screen">
         <Image 
@@ -41,7 +46,7 @@ import '../styles/global.css'; // Importer global.css
             class="absolute inset-0 w-full h-full object-cover"
             loading="lazy" 
         />
-        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="absolute inset-0 bg-black bg-opacity-60"></div> {/* Justeret opacity for mere dybde */}
         <div class="relative z-10 text-center text-white flex flex-col justify-center items-center h-full">
             <h1 class="text-6xl font-extrabold mb-4 tracking-wider">RAP - Fra gaderne til global succes</h1>
             <p class="text-xl max-w-2xl mx-auto">En musikalsk rejse, der startede som et opråb i gaderne og nu lyder gennem hele verden.</p>
@@ -50,14 +55,14 @@ import '../styles/global.css'; // Importer global.css
 
     <article class="grid mx-auto container gap-8 pt-8 prose">
         <h1 class="text-4xl font-bold mb-12 mt-12 text-center text-white transition-transform duration-500 transform hover:scale-105 hover:animate-bounce relative">
-            <span class="block bg-gradient-to-r from-purple-500 to-red-500 bg-clip-text text-transparent text-6xl">
+            <span class="block bg-gradient-to-r from-purple-600 to-gray-800 bg-clip-text text-transparent text-6xl"> {/* Ændret gradient */}
                 Udforskning af RAP: Rytmen af Revolution
             </span>
-            <span class="absolute inset-0 bg-gradient-to-r from-purple-600 to-red-600 opacity-30 rounded-lg"></span>
+            <span class="absolute inset-0 bg-gradient-to-r from-purple-700 to-gray-900 opacity-30 rounded-lg"></span> {/* Ændret gradient */}
         </h1>
     
         
-        <section class="bg-gradient-to-r from-purple-400 to-blue-500 p-8 pb-12 rounded-lg shadow-lg border-l-4 border-white transform transition-transform hover:scale-105 duration-500">
+        <section class="bg-gradient-to-r from-gray-800 to-purple-600 p-8 pb-12 rounded-lg shadow-lg border-l-4 border-white transform transition-transform hover:scale-105 duration-500">
             <h2 class="text-3xl font-bold mb-4 text-white tracking-wider uppercase drop-shadow-lg">Kort historisk oversigt</h2>
             <p class="text-white">RAP, en af de mest markante og indflydelsesrige genrer inden for moderne musik, opstod i New Yorks gader i 1970'erne. Denne genre blev skabt som en del af hiphopkulturen, hvor DJ's og MC's banede vejen for en revolution inden for rytme og poesi. De tidlige rødder i RAP kan spores tilbage til afroamerikanske traditioner for fortælling og rim, men genren udviklede sig hurtigt og blev et redskab for selvudtryk og samfundskritik. Gennem årene har RAP udviklet sig til en global bevægelse, der har inspireret utallige kunstnere og fans verden over.</p>
             <ul class="list-disc list-inside text-white text-sm mt-10">
@@ -70,9 +75,9 @@ import '../styles/global.css'; // Importer global.css
         
         <Image src={mix} alt="Billede af mixerpult, der symboliserer produktionen af rap musik" class="transform transition-transform hover:scale-105 duration-500" />
 
-        <hr class="my-8 border-t-4 border-dashed border-red-500" />
+        <hr class="my-8 border-t-4 border-dashed border-purple-500" /> {/* Ændret farve på separatoren */}
 
-        <section class="bg-gradient-to-l from-green-400 to-teal-500 p-8 pb-12 rounded-lg shadow-lg border-l-4 border-white transform transition-transform hover:scale-105 duration-500">
+        <section class="bg-gradient-to-l from-gray-800 to-purple-600 p-8 pb-12 rounded-lg shadow-lg border-l-4 border-white transform transition-transform hover:scale-105 duration-500">
             <h2 class="text-3xl font-bold mb-4 text-white tracking-wider uppercase drop-shadow-lg">Pionererne i RAP</h2>
             <p class="text-white">Run-DMC banede vejen for mainstream succes med RAP og blev en af de første grupper til at bringe genren ind i det brede musikpublikum. Deres innovative tilgang, der kombinerede rap med rock, gjorde dem til ikoner og cementerede deres plads i musikhistorien. Samtidig satte Tupac Shakur og The Notorious B.I.G. en ny standard for lyrisk dybde og storytelling, hvilket inspirerede generationer af kunstnere til at bruge deres musik som en platform for social kommentar og personlig udforskning. Disse pionerer har hver især efterladt et varigt indtryk på genren og har formet den måde, vi forstår og oplever RAP i dag.</p>
             <ul class="list-disc list-inside text-white text-sm">
@@ -85,41 +90,25 @@ import '../styles/global.css'; // Importer global.css
         
         <Image src={back} alt="Billede af rappers ryg" class="transform transition-transform hover:scale-105 duration-500" />
 
-        <hr class="my-8 border-t-4 border-dashed border-red-500" />
+        <hr class="my-8 border-t-4 border-dashed border-purple-500" /> {/* Ændret farve på separatoren */}
 
-
-        <section class="bg-gradient-to-t from-red-400 to-yellow-500 p-8 pb-12 rounded-lg shadow-lg border-l-4 border-white transform transition-transform hover:scale-105 duration-500">
+        <section class="bg-gradient-to-b from-gray-700 to-purple-800 p-8 pb-12 rounded-lg shadow-lg border-l-4 border-white transform transition-transform hover:scale-105 duration-500">
             <h2 class="text-3xl font-bold mb-4 text-white tracking-wider uppercase drop-shadow-lg">Rap i dag: Fra undergrund til mainstream</h2>
             <p class="text-white">I dag er RAP ikke længere begrænset til USA, men har snarere udviklet sig til en global bevægelse. Kunstnere fra alle hjørner af verden har taget genren til sig, hvilket gør RAP til en platform for mangfoldighed og kulturel udveksling. Denne evolution har ikke blot ændret lyden af genren, men også dens sociale og politiske betydning.</p>
             <h3 class="text-2xl font-semibold mb-2 text-white tracking-wider uppercase drop-shadow-md">Den globale indflydelse</h3>
             <ul class="list-disc list-inside text-white text-sm">
-                <li>Kendrick Lamar, Cardi B, og Kanye West er blandt de mest fremtrædende nutidige kunstnere, der skubber grænserne for, hvad RAP kan være, både lyrisk og musikalsk.</li>
-                <li>Cardi B's meteorkarriere illustrerer RAP’s evne til at bryde ind på de største scener, hvilket beviser, at genren kan appellere til et bredt publikum og opnå kommerciel succes uden at miste sin autentiske stemme.</li>
-                <li>Kanye West har revolutioneret RAP med genreoverskridende produktion, der inkorporerer elementer fra forskellige musikalske stilarter som gospel, rock og elektronisk musik, hvilket åbner dørene for nye kreative muligheder.</li>
+                <li>Kendrick Lamar, Cardi B, og Kanye West er blandt de mest fremtrædende rappere i dag, der har formået at bryde barrierer og nå et bredt publikum. De bringer deres unikke perspektiver ind i genren og udforsker emner, der spænder fra sociale problemer til personlig identitet.</li>
+                <li>Internettet og sociale medier har revolutioneret måden, musik bliver distribueret og promoveret på, hvilket giver nye talenter mulighed for at nå ud til lyttere uden hjælp fra traditionelle pladeselskaber.</li>
+                <li>Rap-kultur har også infiltreret andre musikgenrer, hvilket skaber samarbejder og fusioner, der trækker på forskellige musikalske traditioner og stilarter.</li>
             </ul>
         </section>
         
-        <Image src={shy} alt="Billede af graffitiplakat med teksten 'too shy to rap'" class="transform transition-transform hover:scale-105 duration-500" />
-
-        <hr class="my-8 border-t-4 border-dashed border-red-500" />
-
-
-        <section class="bg-gradient-to-b from-indigo-500 to-blue-800 p-8 pb-12 rounded-lg shadow-lg border-l-4 border-white transform transition-transform hover:scale-105 duration-500">
-            <h2 class="text-3xl font-bold mb-4 text-white tracking-wider uppercase drop-shadow-lg">Kulturel betydning af RAP</h2>
-            <p class="text-white">Gennem årene har RAP udviklet sig til at være mere end blot musik.</p>
-            <h3 class="text-2xl font-semibold mb-2 text-white tracking-wider uppercase drop-shadow-md">Sociale og politiske budskaber</h3>
-            <p class="text-white ">RAP er ikke blot en musikgenre; det er en kraftfuld platform for sociale og politiske budskaber. Gennem teksterne formidler mange rappere dybe og ofte provokerende indsigter, der belyser emner som racisme, social uretfærdighed og politiske problemer. Kunstnere som Public Enemy og Kendrick Lamar bruger deres stemme til at udfordre samfundsnormer og vække opmærksomhed omkring de uretfærdigheder, der findes i vores verden.</p>
-       
-            <h3 class="text-2xl font-semibold mb-2 text-white tracking-wider uppercase drop-shadow-md">RAP som stemme for de marginaliserede</h3>
-            <p class="text-white">RAP fungerer desuden som en stemme for de marginaliserede. Det giver unge og underrepræsenterede grupper mulighed for at udtrykke deres frustrationer, håb og drømme. Gennem musikken kan de dele deres oplevelser og kæmpe for retfærdighed og lighed. Som en genre, der stammer fra de urbaniserede områder, har RAP altid været en refleksion af livets realiteter for dem, der ofte bliver overset. Denne forbindelse mellem musik og social aktivisme gør RAP til en betydningsfuld del af den kulturelle diskurs, som inspirerer både lyttere og kommende generationer.</p>
-            </section>
-
-        <div class="grid grid-cols-2 gap-4">
-            <Image src={blue} alt="Klubfest i blåt lys" class="transform transition-transform hover:scale-105 duration-500" />
-            <Image src={red} alt="Klubfest i rødt lys" class="transform transition-transform hover:scale-105 duration-500" />
-        </div>
-        <hr />
+        <Image src={red} alt="Billede af crowd, der lytter til rapmusik" class="transform transition-transform hover:scale-105 duration-500" />
+        <Image src={blue} alt="Billede af crowd, der lytter til rapmusik" class="transform transition-transform hover:scale-105 duration-500 mb-10" />
     </article>
+    
+    <Footer></Footer>
 </MainLayout>
+
 
 
